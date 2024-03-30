@@ -9,7 +9,7 @@ const tabla = Array.from(
 ).slice(1, 4);
 
 function cambio(value) {
-	dosisTotal.value = value;
+	dosisTotal.value = round(value);
 	precioTotal.value =
 		parseFloat(dosisTotal.value) * parseFloat(precioMiligramo.value);
 
