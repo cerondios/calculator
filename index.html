@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="dose-inputs">
+			<div class="input">
+				<label for="dosis">Dosis (mg)</label>
+				<select name="dosis" id="dosis">
+					<option value="1">1</option>
+					<option value="1.33">1.33</option>
+					<option value="1.75">1.75</option>
+				</select>
+			</div>
+			<div class="input">
+				<label for="weight">Peso (kg)</label>
+				<select name="weight" id="weight"></select>
+			</div>
+			<div class="input">
+				<label for="precio">Precio por miligramo (COP)</label>
+				<input id="precio-miligramo" name="precio" type="number" placeholder="1000 COP" />
+			</div>
+			<div class="input">
+				<label for="precio">Dosis total (mg/kg)</label>
+				<input id="dosis-total" name="precio" type="number" readonly />
+			</div>
+			<div class="input">
+				<label for="precio">Precio total (COP)</label>
+				<input
+					id="precio-total"
+					name="precio"
+					readonly
+					type="number"
+					placeholder="1000 COP"
+				/>
+			</div>
+		</div>
+
+		<table id="table">
+			<tr>
+				<th>///</th>
+				<th>25 (mg)</th>
+				<th>75 (mg)</th>
+			</tr>
+			<tr>
+				<td>Dosis (mg/kg)</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Inyección (dl)</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Desperdicio (mg)</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+		</table>
+
+    <button id="btn">Mejor sugerencia</button>
+
+		<script src="index.js"></script>
+	</body>
+</html>
